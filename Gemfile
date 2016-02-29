@@ -38,11 +38,13 @@ gem 'font-awesome-rails'
 gem 'stamp'
 gem 'simple_form'
 gem "paperclip", "~> 4.3"
+gem 'devise'
 
 group :development, :test do
   gem 'pry-byebug'
   gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
   gem 'rspec-rails'
+  gem 'devise'
 end
 
 group :development do
@@ -55,5 +57,6 @@ group :development do
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'devise'
 end
 
