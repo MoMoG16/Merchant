@@ -1,5 +1,17 @@
+<!-- Search form -->
+<span class="pull-right">
+  <%= form_tag(shop_path, method: :get, role: "search", class: "form-inline") do %>
+    <div class="form-group">
+      <%# TODO: hide the search label %>
+      <%# label_tag :search, class: "sr-only" %>
+      <%= text_field_tag(:search, nil, placeholder: "Search products", class: "form-control input-sm") %>
+    </div>
+    <%= submit_tag("Search", class: "btn btn-default btn-sm") %>
+  <% end %>
+</span>
+
 <h1>Welcome to Mardi Paws!</h1>
-<p>Dress your pup like every day is Mardi Gras.</p>
+<p>Dress your pets like every day is Mardi Gras.</p>
 
 <% if params[:category_id] %>
 <h3>All <%= @category.name.titleize %></h3>
