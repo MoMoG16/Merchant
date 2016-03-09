@@ -39,6 +39,7 @@ gem 'stamp'
 gem 'simple_form'
 gem "paperclip", "~> 4.3"
 gem 'devise'
+gem 'figaro'
 
 group :production do
   gem 'pg'
@@ -62,6 +63,6 @@ group :development do
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'devise'
+
 end
 
